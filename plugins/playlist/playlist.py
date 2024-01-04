@@ -104,7 +104,7 @@ class GeneratePlaylist(BaseAction):
             log.debug("{}: default playlist filename sanitized to {}".format(
                     PLUGIN_NAME, default_filename))
             
-        b_filename, b_selected_format = QtWidgets.QFileDialog.getSaveFileName(
+        b_filename, selected_format = QtWidgets.QFileDialog.getSaveFileName(
             None, "Save new playlist",
             os.path.join(current_directory, default_filename),
             "Playlist (*.m3u8 *.m3u)"
